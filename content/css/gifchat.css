@@ -1,6 +1,6 @@
 
 #rootDiv {
-   background: url(../i/products/gifchat/bg_1.png) no-repeat center center fixed; 
+   background: url(/content/i/products/gifchat/bg_1.png) no-repeat center center fixed; 
   
 }
 
@@ -8,12 +8,12 @@
  
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/gifchat/bg_1.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/gifchat/bg_1.png', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/gifchat/bg_1.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/gifchat/bg_1.png', sizingMethod='scale')";
   
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-  background: url(../i/products/gifchat/bg_1.png) no-repeat center center;
+  background: url(/content/i/products/gifchat/bg_1.png) no-repeat center center;
 
 
 }
@@ -25,12 +25,12 @@
 
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/gifchat/bg_3.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/gifchat/bg_3.png', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/gifchat/bg_3.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/gifchat/bg_3.png', sizingMethod='scale')";
   
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-  background: url(../i/products/gifchat/bg_3.png) no-repeat center center;
+  background: url(/content/i/products/gifchat/bg_3.png) no-repeat center center;
 
   
 }
@@ -41,12 +41,12 @@
  
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/'../i/products/gifchat/bg_5.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/'../i/products/gifchat/bg_5.png', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/'/content/i/products/gifchat/bg_5.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/'/content/i/products/gifchat/bg_5.png', sizingMethod='scale')";
   
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-  background: url(../i/products/gifchat/bg_5.png) no-repeat center center;
+  background: url(/content/i/products/gifchat/bg_5.png) no-repeat center center;
 
 
   
@@ -57,3 +57,17 @@
   margin-left:52px;
   width:420px;
 }
+
+.downloadlinks
+{
+ 
+  
+   position: fixed; left: -225px; top: 0;
+   width: 450px; height: 110px;
+   
+}
+
+.downloadText {
+  width:33%;float:left;font-size:11px;
+}
+

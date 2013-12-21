@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<meta name="description" content="Pinger makes texting and talking free. Our market-leading communications products have been downloaded by millions of iPhone, iPod touch, iPad and Android users around the world.">
     <meta name="keywords" content="textfree with voice,textfree unlimited,free sms,free text,free text online,free sms online,send free text messaging,free text from computer,doodle buddy,stickwars">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/jukevox.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/media.css" type="text/css" media="screen" />
-    <!-- // <script src="//cdn.optimizely.com/js/121606231.js"></script> -->
+	<link rel="stylesheet" href="/content/css/style.css?<?php echo date('l jS \of F Y '); ?>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/content/css/jukevox.css?<?php echo date('l jS \of F Y '); ?>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/content/css/media.css?<?php echo date('l jS \of F Y '); ?>" type="text/css" media="screen" />
+    <script src="//cdn.optimizely.com/js/121606231.js"></script>
 	
 	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
-	<script src="gifchat/js/jquery.scripts.js" type="text/javascript"></script>
+	<script src="/content/gifchat/js/jquery.scripts.js?<?php echo date('l jS \of F Y '); ?>" type="text/javascript"></script>
 	<script type="text/javascript">
 	<!--
 	
@@ -77,14 +77,17 @@
         	<div class = "line"></div>
             <div id = "pinger_logo"></div>
             <div id = "logo"></div>
+            <div id = "app_name">JukeVox Messenger</div>
+            
             <div id = "topnav">
                 <ul>
                 
               
 
-                    <li><a href = "advertise.html">advertise</a></li>
+                    <li><a href = "/content/advertise.html">advertise</a></li>
                     <li><a href = "/tfw/">textfree web</a></li>
-                    <li><a href = "company/press/">news</a></li>
+                    <li><a href = "/content/text-from-your-computer/">pinger desktop</a></li>
+                    <li><a href = "/content/company/press/">news</a></li>
                     <li><a href = "http://blog.pinger.com/">blog</a></li>
                     
                 </ul>
@@ -114,16 +117,17 @@
                     </div>
                     <div><a href = "javascript:" class = "btn_download downloadjvm" id = "btn_download_textfree" onclick="_gaq.push(['_trackEvent', 'TextfreeMain-iOSiTunesButton-Aug2013', 'Popup']);" ></a></div>
                     <div id = "moreapps">
-                    	<p>Other apps from pinger inc.</p>
+                    	<p>Our other apps</p>
                     
                     	<ul>
-                            <li><a href = "home.html" ><div id = "gifchat">Send texts over animated gifs that self destruct.<br/><u>Learn More</u></div></a></li>
-                            <li><a href = "pinger.html" ><div id = "pingerapp">Text & call free to any phone. Get a real phone number.<br/><u>Learn More</u></div></a></li>
-                            <li><a href = "freestyle.html"  ><div id = "fsm">Customize how your texts look to the people who receive them<br/><u>Learn More</u></div></a></li>
-                            <li><a href = "textfree.html" ><div id = "tf">Turn your iPod or iPad into a phone. Get a real phone number.<br/><u>Learn More</u></div></a></li>
+                            <li><a href = "/content/home.html" ><div id = "gifchat"><h2>GIF CHAT</h2>Text animated GIFs that self-destruct.<br/><u>Learn More</u></div></a></li>
+                            <li><a href = "/content/freestyle.html"  ><div id = "fsm"><h2>FREE STYLE MESSENGER</h2>Customize how your texts look to the people who receive them<br/><u>Learn More</u></div></a></li>
+                            <li><a href = "/content/textfree.html" ><div id = "tf"><h2>TEXTFREE EX</h2>Turn your iPod or iPad into a phone. Get a real phone number.<br/><u>Learn More</u></div></a></li>
+                            <li><a href = "/content/pinger.html" ><div id = "pingerapp"><h2>PINGER</h2>Text & call free to any phone. Get a real phone number.<br/><u>Learn More</u></div></a></li>
                         </ul>
                         
                     </div>
+                    <p class="clear"></p>
                 
                 </div>
             	<a href="#sec2"  class = "more"></a>
@@ -143,7 +147,7 @@
                 
                 <div>
                 	<h1 class = "centered">Sounds So Crazy</h1>
-                	<p class = "centered">Juke Vox allows you to change your tune to something, well, crazy and fun. Share private chat messages that will keep your favorite person interested.</p></div>
+                	<p class = "centered">JukeVox allows you to change your tune to something, well, crazy and fun. Share private chat messages that will keep your favorite person interested.</p></div>
                 
                 <div><a href = "javascript:" class = "btn_get_app downloadjvm" onclick="_gaq.push(['_trackEvent', 'TextfreeSide3-iOSiTunesButton-Aug2013', 'Popup']);" ></a></div>
                 
@@ -163,71 +167,68 @@
         </div>
         
 		<div id = "footer" class = "nav invisible">
-            <div class="container">
-                <div id = "pinger_logo_plain"></div>
+            <div id = "pinger_logo_plain"></div>
+            
+            <div id ="site_links">
                 
-                <div id ="site_links">
-                    
-                    <div class = "col1">
-                        <ul>
-                            <li>Products</li>
-                            <li><a href = "home.html">Gif Chat App</a></li>
-                            <li><a href = "jukevox.html">JukeVox Messenger App</a></li>
-                            <li><a href = "freestyle.html">Free Style App</a></li>
-                            <li><a  href = "javascript:" class = "downloadp"  onclick="_gaq.push(['_trackEvent', 'TextfreeFooter-iOSiTunesButton-Aug2013', 'Popup']);">Pinger App</a></li>
-                            <li><a href = "text-from-your-computer/">Pinger Desktop</a></li>
-                            <li><a href = "textfree.html">Textfree App</a></li>
-                            <li><a href = "/tfw/">Textfree Web</a></li>
-                            
-                        </ul>
+                <div class = "col1">
+                    <ul>
+                        <li>Products</li>
+                        <li><a href = "/content/home.html">GIF Chat App</a></li>
+                        <li><a href = "javascript:" class = "downloadjvm" onclick="_gaq.push(['_trackEvent', 'JukeVoxtFooter-iOSiTunesButton-Aug2013', 'Popup']);" >JukeVox Messenger App</a></li>
+                        <li><a href = "/content/freestyle.html">Free Style Messenger App</a></li>
+                        <li><a href = "/content/pinger.html">Pinger App</a></li>
+                        <li><a href = "/content/text-from-your-computer/">Pinger Desktop</a></li>
+                        <li><a href = "/content/textfree.html">Textfree App</a></li>
+                        <li><a href = "/tfw/">Textfree Web</a></li>
                         
-                        
-                    </div>
+                    </ul>
                     
-                    <div class = "col2">
-                        <ul>
-                            <li>Company</li>
-                            <li><a href = "company/about_us.html">About Us</a></li>
-                            <li><a href = "company/press/">News</a></li>
-                            <li><a href = "company/jobs/">Careers</a></li>
-                        </ul>
-                        
-                    </div>
-                    
-                    <div class = "col3">
-                        <ul>
-                            
-                            <li>Resource Center</li>
-                            <li><a href = "http://pinger.zendesk.com/home">Tech Support</a></li>
-                            <li><a href = "http://blog.pinger.com/">Blog</a></li>
-                            
-                        </ul>
-                        
-                    </div>
-                    
-                    <div class = "col4">
-                        <ul>
-                            
-                            <li>Contact Us</li>
-                            <li><a href="advertise.html">Advertise</a></li>
-                            
-                        </ul>
-                        
-                    </div>
-                    
-                    <div class = "col5">
-                        <ul>
-                            
-                             <li>Follow Us</li>
-                            <li><div id="social"> <a id="facebookBtn" href="https://www.facebook.com/pinger"  onclick="_gaq.push(['_trackEvent', 'facebookGifChat-Aug2013', 'Link']);" target="_blank"></a> <a id="twitterBtn" href="http://twitter.com/pinger"  onclick="_gaq.push(['_trackEvent', 'twitterPinger-Aug2013', 'Link']);" target="_blank"></a></div></li>
-                          
-                        </ul>
-                    </div>
                     
                 </div>
+                
+                <div class = "col2">
+                    <ul>
+                        <li>Company</li>
+                        <li><a href = "/content/company/about_us.html">About Us</a></li>
+                        <li><a href = "/content/company/press/">News</a></li>
+                        <li><a href = "/content/company/jobs/">Careers</a></li>
+                    </ul>
+                    
+                </div>
+                
+                <div class = "col3">
+                    <ul>
+                        
+                        <li>Resource Center</li>
+                        <li><a href = "http://pinger.zendesk.com/home">Tech Support</a></li>
+                        <li><a href = "http://blog.pinger.com/">Blog</a></li>
+                        
+                    </ul>
+                    
+                </div>
+                
+                <div class = "col4">
+                    <ul>
+                        
+                        <li>Contact Us</li>
+                        <li><a href="/content/advertise.html">Advertise</a></li>
+                        
+                    </ul>
+                    
+                </div>
+                
+                <div class = "col5">
+                    <ul>
+                        
+                         <li>Follow Us</li>
+                        <li><div id="social"> <a id="facebookBtn" href="https://www.facebook.com/pinger"  onclick="_gaq.push(['_trackEvent', 'facebookGifChat-Aug2013', 'Link']);" target="_blank"></a> <a id="twitterBtn" href="http://twitter.com/pinger"  onclick="_gaq.push(['_trackEvent', 'twitterPinger-Aug2013', 'Link']);" target="_blank"></a></div></li>
+                      
+                    </ul>
+                </div>
+                
             </div>
-            <div class = "line"><div id = "copyright">Copyright &copy; Pinger, Inc.</div></div>
-            
+            <div class = "line"><div id = "copyright">Copyright &copy; <?php echo date('Y'); ?> Pinger, Inc.</div></div>
         </div>
             
 	

@@ -132,7 +132,7 @@ function Onesite() {
 				function () {
 					
 					if( /Android/i.test(navigator.userAgent) ) {
-						window.open("http://pinger.comexit.html?url=https://market.android.com/details?id=com.pinger.textfree");
+						window.open("http://pinger.com/content/exit.html?url=https://market.android.com/details?id=com.pinger.textfree");
 					} else if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
 						window.open("http://click.linksynergy.com/fs-bin/stat?id=hDU53YXwIEk%26offerid=146261%26type=3%26subid=0%26tmpid=1826%26u1=XXX_pinger.com_TFV%26RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Fid399355755%253Fmt%253D8%2526uo%253D6%2526partnerId%253D30");
 					} else {
@@ -186,7 +186,7 @@ function Onesite() {
 					if( /Android/i.test(navigator.userAgent) ) {
 						window.open("https://play.google.com/store/apps/details?id=com.pinger.ppa");
 					} else if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-						window.open("https://itunes.apple.com/us/app/pinger-turn-your-ipod-touch/id444741112?mt=8");
+						window.open("https://itunes.apple.com/us/app/pinger-ex-text-free-+-free/id570756103?mt=8");
 					} else {
 						$("#downloadlinksoverlay").fadeIn();
 						$("#pdl").fadeIn();

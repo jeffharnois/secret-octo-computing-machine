@@ -1,85 +1,172 @@
+
+#rootDiv {
+   background: url(/content/i/products/pinger/bg_1.jpg) no-repeat center center fixed; 
+  
+}
+
 #moreapps p {
 	font: Helvetica;
 	font-family:Helvetica, Arial, sans-serif;
+	font-weight:bold;
 }
 
-#sec1 #shell #blurb {
-  padding-top:130px;
+#sec1 #shell #blurb, #sec1GB #shell #blurb {
+  padding-top:95px;
   color:#fff;
   font-size:18px;
   margin-left:52px;
-  width:420px;
+  width:480px;
+  font-weight:500;
 }
 
 #blurb p {
 	margin-bottom:10px;
-	width:380px;
+	width:340px;
+	font-size:20px;
+	line-height:30px;
+	
 }
+
+.quotes {
+	font-style:italic;
+	color:#fff;
+	font-size:1.1em;	
+	font-weight:bold;
+}
+
+.source {
+	font-size:.7em;	
+	color:#fff;
+}
+
+
 
 #sec1 #shell {
  
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/pinger/bg_1.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/pinger/bg_1.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/pinger/bg_1.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/pinger/bg_1.jpg', sizingMethod='scale')";
   
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-  background: url(../i/products/pinger/bg_1.jpg) no-repeat center center;
+  background: url(/content/i/products/pinger/bg_1.jpg) no-repeat center center;
+
+
 }
+
+
+#sec1GB #shell {
+ 
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/pinger/bg_1_gb.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/pinger/bg_1_gb.jpg', sizingMethod='scale')";
+  
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(/content/i/products/pinger/bg_1_gb.jpg) no-repeat center center;
+
+
+}
+
 
 h1 {
 	font:Helvetica;
 	font-family:Helvetica, Arial, sans-serif;
 	color:#fff;
-	font-weight:200;
-	font-size:40px;
+	font-weight:400;
+	font-size:45px;
 	margin-bottom:20px;
 }
 
 .pingerwinkle {
-	color:#6063ce;	
+	color:#6063ce;
+	
 }
 
+
 #sec2 {
+ 
 	height:696px;
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/pinger/bg_2.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/pinger/bg_2.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/pinger/bg_2.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/pinger/bg_2.jpg', sizingMethod='scale')";
   
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-  background: url(../i/products/pinger/bg_2.jpg) no-repeat center bottom;
+  background: url(/content/i/products/pinger/bg_2.jpg) no-repeat center bottom;
+
+  
 }
 
-#sec2 p {
+
+#sec2GB {
+ 
+	height:696px;
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/pinger/bg_2_gb.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/pinger/bg_2_gb.jpg', sizingMethod='scale')";
+  
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(/content/i/products/pinger/bg_2_gb.jpg) no-repeat center bottom;
+
+  
+}
+
+#sec2 p, #sec2GB p {
 	width:583px;
 }
 
 
-#sec2 div {
+#sec2 div, #sec2GB div {
 	padding-top:0px;
+	
 }
 
-#sec3 {
+
+#sec3, #sec3GB {
+ height:503px;
+  background: #d0dde3;
+  background: rgb(226,123,63); /* Old browsers */
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+ 
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/pinger/bg_3.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/pinger/bg_3.jpg', sizingMethod='scale')";
+  background: url(/content/i/products/bg_3.png) no-repeat center center;
+
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  
+  background-size: cover;
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/pinger/bg_3.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/pinger/bg_3.jpg', sizingMethod='scale')";
   
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-  background: url(../i/products/pinger/bg_3.jpg) no-repeat center center;  
+  background: url(/content/i/products/pinger/bg_3.jpg) no-repeat center center;
+
+  
 }
 
-#sec3 h1 {
+#sec3 h1,#sec3GB h1 {
 	font-size:35px;
 	padding-top:100px;
 	padding-left:220px;
+	text-shadow: 2px 2px 2px #000000;
 }
 
-#sec3 p {
+#sec3 p, #sec3GB p {
   padding-top:0px;
   padding-left:220px;
   color:#fff;
@@ -88,31 +175,43 @@ h1 {
   width:380px;
 }
 
-#sec3 h1 {
-	  text-shadow: 2px 2px 2px #000000;
+#sec3GB p  {
+  line-height:23px;
+  margin-bottom:20px;
+  width:300px;
+
 }
+
+
+
+
+
 
 #sec4 {
 	height:648px;
 	 padding-top:0px;
  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/pinger/bg_4.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/pinger/bg_4.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/pinger/bg_4.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/i/products/pinger/bg_4.jpg', sizingMethod='scale')";
   
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-  background: url(../i/products/pinger/bg_4.jpg) no-repeat center bottom;
+  background: url(/content/i/products/pinger/bg_4.jpg) no-repeat center bottom;
 }
+
 
 #sec4 p {
 	width:520px;
 	line-height:23px;
 }
 
+
+
 #sec4 div {
-  padding-top:30px;
-	line-height:30px;	
+	padding-top:30px;
+	 line-height:30px;
+	
 }
 
 .btn_get_app {
@@ -121,10 +220,33 @@ h1 {
   height: 90px;
 }
 
+
+.more {
+  background-position: 0 -941px;
+  width: 1000px;
+  height: 67px;
+}
+
+.more_shadow {
+  background-position: 0 -882px;
+}
+
+.more_shadow_white {
+  background-position: 0 -1008px;
+}
+
+
 .btn_download {
   background-position: 0 -767px;
   width: 131px;
   height: 26px;
+  
+}
+
+#btn_download_textfree {
+  position:absolute;
+  top:340px;
+  left: 51px;
 }
 
 #logo {
@@ -132,17 +254,33 @@ h1 {
   width: 137px;
   height: 115px;
   margin-left:-5px;
+  top:0px;
 }
+
+#logoGB {
+  background-position: 0 -1595px;
+  width: 137px;
+  height: 115px;
+  margin-left:0px;
+  top:0px;
+}
+
+
+#app_name {
+	text-align:center;
+	color:#fff;
+	font-family: helvetica, sans-serif, arial;
+	font-weight:bold;
+	font-size:20px;
+  
+	
+}
+
+
 
 #gifchat {
-  width:180px;
+ width:180px;
   padding-left:63px;
-}
-
-
-#moreapps div#gifchat {
-  background-position: 0 -1206px;
-  width: 140px;
 }
 
 @media only screen and (min-width:320px) and (max-width:600px) {
@@ -154,4 +292,14 @@ h1 {
   #sec4 {
     height: 685px;
   }
+}
+
+#moreapps div#gifchat {
+  background-position: 0 -1206px;
+  width: 140px;
+}
+
+.downloadlinks
+{
+  height:130px;
 }

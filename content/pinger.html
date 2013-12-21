@@ -1,3 +1,25 @@
+<?php
+
+require_once $_SERVER['API_ROOT'] . "/web/IPLocation.php";
+    
+    if (isset($_REQUEST['country_code'])) {
+        //override country code.
+        $country_code = strtoupper(trim($_REQUEST['country_code']));
+    } else {
+        //Get country code from local database.
+		if (isset($_SERVER['HTTP_X_ORGIP_FOR'])) {
+			$ip = $_SERVER['HTTP_X_ORGIP_FOR'];
+		} else {
+			$ip = $_SERVER['REMOTE_ADDR'];
+		}
+        $country_code = strtoupper(IPLocation::GetCountryCode($ip));
+        if(empty($country_code)) {
+            $countryCode = 'US';
+        }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -8,7 +30,7 @@
 	<meta name="description" content="Pinger makes texting and talking free. Our market-leading communications products have been downloaded by millions of iPhone, iPod touch, iPad and Android users around the world.">
     <meta name="keywords" content="textfree with voice,textfree unlimited,free sms,free text,free text online,free sms online,send free text messaging,free text from computer,doodle buddy,stickwars">
 	<link rel="stylesheet" href="/content/css/style.css?<?php echo date('l jS \of F Y '); ?>" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/content/css/freestyle.css?<?php echo date('l jS \of F Y '); ?>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/content/css/pinger_app.css?<?php echo date('l jS \of F Y '); ?>" type="text/css" media="screen" />
     <link rel="stylesheet" href="/content/css/media.css?<?php echo date('l jS \of F Y '); ?>" type="text/css" media="screen" />
     <script src="//cdn.optimizely.com/js/121606231.js"></script>
 	
@@ -53,31 +75,30 @@
 	
     	<!--div id = "rootDiv"></div-->
 		<div id = "downloadlinksoverlay"></div>
-        
-        
-        <div id = "fsmdl" class = "downloadlinks" style = "height:130px;">
-            <p>Download Free Style Messenger Now</p>
+        <div id = "pdl" class = "downloadlinks">
+        	<p>Download Pinger now!</p>
             <p>&nbsp;</p>
             <div>
-                <div class = "downloadText"><a href="https://itunes.apple.com/us/app/free-style-messenger-text/id651122548?mt=8" target="_blank" onclick="_gaq.push(['_trackEvent', 'FreeStyle-iOSiTunesButton-Aug2013', 'Download']);">I have an iOS device</a></div>
-                <div class = "downloadText"><a href="https://play.google.com/store/apps/details?id=com.pinger.free.style.messenger.text" target="_blank" onclick="_gaq.push(['_trackEvent', 'FreeStyle-AndroidGPlayButton-Aug2013', 'Download']);">I have an Android device</a></div>
+                <div class = "downloadText"><a href="https://itunes.apple.com/us/app/pinger-ex-text-free-+-free/id570756103?mt=8" target="_blank" onclick="_gaq.push(['_trackEvent', 'Pinger-iOSiTunesButton-Aug2013', 'Download']);">I have an iOS device</a></div>
+                <div class = "downloadText"><a href="https://play.google.com/store/apps/details?id=com.pinger.ppa" target="_blank" onclick="_gaq.push(['_trackEvent', 'Textfree-AndroidGPlayButton-Aug2013', 'Download']);">I have an Android device.</a></div>
                 <div>
-                	<p>
-                        <a href="https://itunes.apple.com/us/app/free-style-messenger-text/id651122548?mt=8" target="_blank" id="appstoreBtn" onclick="_gaq.push(['_trackEvent', 'FreeStyle-iOSiTunesButton-Aug2013', 'Download']);">Available on the App Store</a>
-                        <a href="https://play.google.com/store/apps/details?id=com.pinger.free.style.messenger.text" target="_blank" id="androidBtn" onclick="_gaq.push(['_trackEvent', 'FreeStyle-AndroidGPlayButton-Aug2013', 'Download']);">Available on Google Play</a>
+                    <p>
+                        <a href="https://itunes.apple.com/us/app/pinger-ex-text-free-+-free/id570756103?mt=8" target="_blank" id="appstoreBtn" onclick="_gaq.push(['_trackEvent', 'Pinger-iOSiTunesButton-Aug2013', 'Download']);">Available on the App Store</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.pinger.ppa" target="_blank" id="androidBtn" onclick="_gaq.push(['_trackEvent', 'Textfree-AndroidGPlayButton-Aug2013', 'Download']);">Available on Google Play</a>
                     </p>
-                </div>
+               </div>
             </div>
             <div class = "downloadlinksclose"></div>
         </div>
+        
+        
         
        
         
         <div id = "header" class = "nav invisible">
         	<div class = "line"></div>
             <div id = "pinger_logo"></div>
-            <div id = "logo"></div>
-            <div id = "app_name">Free Style Messenger</div>
+            <div id = 'logo<?php  if ($country_code == "GB") { echo "GB"; }?>'></div>
             <div id = "topnav">
                 <ul>
                 
@@ -104,25 +125,34 @@
         
         	
             	
-            <div class="section invisible" id="sec1">
+            <div class="section invisible" id='sec1<?php  if ($country_code == "GB") { echo "GB"; }?>'>
             	<div id = "shell">
                 	<div class = "undershadow"></div>
                     
                     <div id = "blurb">
-                    	<h1>Texts As Unique As You Are</h1>
+                    	<h1>Set your Phone to Free</h1>
             
-                    	<p>Send and receive customized text messages with colorful backgrounds, stylish fonts, text animations, stickers and GIFs.</p>
+                    	<p><?php 
+                        	if ($country_code == "GB") { 
+                            	echo "Unlimited free text messaging to any mobile phone anywhere in the UK. And free calling to any phone anywhere in the world."; 
+                            } else { echo "Pinger gives you your own real phone number so you can call or SMS any phone, even if they don't have Pinger. Call or text from your phone, iPod, iPad or computer."; 
+                            }?>
+                         </p>
                     	       
                     </div>
-                    <div><a href = "javascript:" class = "btn_download downloadfsm" id = "btn_download_textfree" onclick="_gaq.push(['_trackEvent', 'TextfreeMain-iOSiTunesButton-Aug2013', 'Popup']);" ></a></div>
+                    <div><a href = "javascript:" class = "btn_download downloadp" id = "btn_download_textfree" onclick="_gaq.push(['_trackEvent', 'TextfreeMain-iOSiTunesButton-Aug2013', 'Popup']);" ></a></div>
                     <div id = "moreapps">
                     	<p>Our other apps</p>
                     
                     	<ul>
                             <li><a href = "/content/home.html" ><div id = "gifchat"><h2>GIF CHAT</h2>Text animated GIFs that self-destruct.<br/><u>Learn More</u></div></a></li>
                             <li><a href = "/content/jukevox.html"><div id = "jvm"><h2>JUKEVOX MESSENGER</h2>Voice messaging with crazy sound effects<br/><u>Learn More</u></div></a></li>
-                            <li><a href = "/content/textfree.html" ><div id = "tf"><h2>TEXTFREE EX</h2>Turn your iPod or iPad into a phone. Get a real phone number.<br/><u>Learn More</u></div></a></li>
-                            <li><a href = "/content/pinger.html" ><div id = "pingerapp"><h2>PINGER</h2>Text & call free to any phone. Get a real phone number.<br/><u>Learn More</u></div></a></li>
+                            <li><a href = "/content/freestyle.html"  ><div id = "fsm"><h2>FREE STYLE MESSENGER</h2>Customize how your texts look to the people who receive them<br/><u>Learn More</u></div></a></li>
+                            <?php 
+                        	if ($country_code != "GB") { ?>
+                            	<li><a href = "/content/textfree.html" ><div id = "tf"><h2>TEXTFREE EX</h2>Turn your iPod or iPad into a phone. Get a real phone number.<br/><u>Learn More</u></div></a></li>
+                            <?php }?>
+                         
                         </ul>
                         
                     </div>
@@ -133,33 +163,47 @@
             	<a href="#sec2"  class = "more"></a>
             </div>
             
-            <div class="section invisible" id="sec2"><a name="sec2"></a>
+            <div class="section invisible" id='sec2<?php  if ($country_code == "GB") { echo "GB"; }?>'><a name="sec2"></a>
                 <div >
-                	<h1 class = "pingerwinkle  centered">Your Style on their Screen</h1>
-                	<p class = "centered">Free Style doesn't just style messages on your phone, it delivers your custom looks to everyone in your network.  Your friends see your font, your emoji and your bubble backgrounds on their phones.</p>
+                	<h1 class = "pingerwinkle  centered">Turn any Device into a Phone</h1>
+                	
+                    <p class = "centered">
+                    	<?php 
+                        	if ($country_code == "GB") { 
+                            	echo "Pinger gives you your own real +44 phone number so you can call or SMS any phone, even if they don't have Pinger. Call or text from your phone, iPod or iPad."; 
+                            } else { echo "Pinger gives you your own real phone number so you can call or SMS any phone number even if they don't have Pinger. From your phone, iPod, iPad or computer."; 
+                            }?>
+                         </p>
+                         
+                         
                 </div>
-                <div><a href = "javascript:" class = "btn_get_app downloadfsm" onclick="_gaq.push(['_trackEvent', 'TextfreeSide2-iOSiTunesButton-Aug2013', 'Popup']);" ></a></div>
+                <div><a href = "javascript:" class = "btn_get_app downloadp" onclick="_gaq.push(['_trackEvent', 'TextfreeSide2-iOSiTunesButton-Aug2013', 'Popup']);" ></a></div>
                 
                 <a href="#sec3"  class = "more_shadow"></a>
             </div>
                 
-            <div class="section invisible" id="sec3"><a name="sec3"></a>
+            <div class="section invisible" id='sec3<?php  if ($country_code == "GB") { echo "GB"; }?>'><a name="sec3"></a>
                 
                 <div>
-                	<h1 class = "centered">Share your True Colors</h1>
-                	<p class = "centered">Free Style lets you create texts that disappear as soon as they're read.  So what you share in the moment stays in the moment.</p></div>
+                	<h1 class = "centered">Actually, Freedom is Free</h1>
+                	<p class = 'centered'><?php 
+                        	if ($country_code == "GB") { 
+                            	echo "Incoming calls are always free, and each one earns you points to make free calls to any phone anywhere in the world.</p><p class = 'centered'>Just dial the country code and the number. Now you don't need to know which messaging service your friends use."; 
+                            } else { echo "With unlimited free texting to the U.S., Canada and over 35 other countries you're free here, there or pretty much anywhere."; 
+                            }?>
+                         </p></p></div>
                 
-                <div><a href = "javascript:" class = "btn_get_app downloadfsm" onclick="_gaq.push(['_trackEvent', 'TextfreeSide3-iOSiTunesButton-Aug2013', 'Popup']);" ></a></div>
+                <div><a href = "javascript:" class = "btn_get_app downloadp" onclick="_gaq.push(['_trackEvent', 'TextfreeSide3-iOSiTunesButton-Aug2013', 'Popup']);" ></a></div>
                 
                 <a href="#sec4"  class = "more_shadow_white"></a>
             </div>
             
             <div class="section invisible" id="sec4"><a name="sec4"></a>
                 <div >
-                	<h1 class = "pingerwinkle centered">Get Animated with Stickers, GIFs and Emoji</h1>
-                	<p class = "centered">Break free of boring blue bubbles with Free Style's custom animated stickers, live action GIFs and emoji.  Whether you're feeling devilish, delighted or desperate for caffeine, there's an animation to match your mood.</p>
+                	<h1 class = "pingerwinkle centered">Personalize your Peeps</h1>
+                	<p class = "centered">Set the proper mood for your conversations with unique wallpapers for any or all of your contacts.  Just pick any pic from your phone.</p>
                 </div>
-                <div><a href = "javascript:" class = "btn_get_app downloadfsm" onclick="_gaq.push(['_trackEvent', 'TextfreeSide4-iOSiTunesButton-Aug2013', 'Popup']);" ></a></div>
+                <div><a href = "javascript:" class = "btn_get_app downloadp" onclick="_gaq.push(['_trackEvent', 'TextfreeSide4-iOSiTunesButton-Aug2013', 'Popup']);" ></a></div>
                 
             </div>
             
@@ -176,10 +220,10 @@
                         <li>Products</li>
                         <li><a href = "/content/home.html">GIF Chat App</a></li>
                         <li><a href = "/content/jukevox.html">JukeVox Messenger App</a></li>
-                        <li><a href = "javascript:" class = "downloadfsm" onclick="_gaq.push(['_trackEvent', 'FreeStyleFoote-iOSiTunesButton-Aug2013', 'Popup']);"  >Free Style Messenger App</a></li>
-                        <li><a href = "/content/pinger.html">Pinger App</a></li>
+                        <li><a href = "/content/freestyle.html">Free Style Messenger App</a></li>
+                        <li><a  href = "javascript:" class = "downloadp"  onclick="_gaq.push(['_trackEvent', 'TextfreeFooter-iOSiTunesButton-Aug2013', 'Popup']);">Pinger App</a></li>
                         <li><a href = "/content/text-from-your-computer/">Pinger Desktop</a></li>
-                        <li><a  href = "/content/textfree.html">Textfree App</a></li>
+                        <li><a href = "/content/textfree.html">Textfree App</a></li>
                         <li><a href = "/tfw/">Textfree Web</a></li>
                         
                     </ul>

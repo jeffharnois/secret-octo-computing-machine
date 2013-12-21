@@ -139,7 +139,7 @@ margin-top: 0em;
   visibility:visible;
 }
 
-#logo {
+#logo, #logoGB {
   position:absolute;
   top:18px;
   left:52px;
@@ -173,9 +173,9 @@ margin-top: 0em;
 .more {
   position:absolute;
   bottom: 0;
-  max-width:1000px;
-  height: 67px;
-  margin: 0 auto;
+  max-width:100%;
+  height:67px;
+  /* hide for now */
   display: none;
 }
 
@@ -186,7 +186,6 @@ margin-top: 0em;
   left:0px;
   width:100%;
   height:58px;
-  display: none;
   
 }
 
@@ -207,8 +206,6 @@ margin-top: 0em;
 }
 
 #footer {
-  /*position:absolute;*/
-  /*top:3120px;*/
   width:100%;
   height:265px;
   float: left;
@@ -243,8 +240,9 @@ div#social {
 }
 
 #site_links {
-  margin-left:215px;
   float: left;
+  margin-left:215px;
+  
 }
 
 #footer .col1 {
@@ -294,6 +292,7 @@ div#social {
   display: inline-block;
   position:absolute;
   top:234.5px;
+  left: 0px;
   margin: 0;
   text-indent: -9999px;
   font-size: 0;
@@ -301,13 +300,8 @@ div#social {
 
 #footer .line {
   height:53px;
-  top:214px;
   float: left;
-}
-
-
-#btn_download_textfree {
-  margin: 5px 0 0 52px;
+  top:214px;
 }
 
 
@@ -609,10 +603,8 @@ transition: all .3s ease;
 
 
 #contentFrame {
-  /*position: absolute;*/
-  float: left;
-  /*top: 72px;*/
   width:100%;
+  float: left;
   background-color:#fff;
 }
 
@@ -628,14 +620,14 @@ transition: all .3s ease;
   position: relative;
 }
 
-#sec1 {
+#sec1, #sec1GB {
   height:585px;
   background: rgb(0,0,0); /* Old browsers */
 
   
 }
 
-#sec1 #shell {
+#sec1 #shell, #sec1GB #shell {
   height:570px;
   max-width:1000px;
   margin: 0 auto;
@@ -652,27 +644,16 @@ transition: all .3s ease;
   background-size: cover;
 }
 
-#sec1 p {
+#sec1 p, #sec1GB p {
   color:#fff;
   font-size:18px;
 }
 
 #moreapps {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   margin: 110px auto 0;
   padding: 0 50px;
-  float: left;
-  /*position:absolute;*/
-  /*top:410px;*/
-  /*left:53px;  */
-}
-
-#moreapps p {
-  display: inline-block;
-}
-
-#moreapps ul {
-  display: inline-block;
 }
 
 
@@ -704,7 +685,7 @@ transition: all .3s ease;
   height:55px;
   color:#fff;
   font-size:12px;
-  margin-right:6px;
+  margin-right:5px;
 }
 
 
@@ -761,7 +742,7 @@ transition: all .3s ease;
 
 
 
-#sec2 {
+#sec2, #sec2GB {
   padding-top:42px;
   height:680px;
   
@@ -836,7 +817,7 @@ transition: all .3s ease;
   background-attachment: scroll;
   background-clip: border-box;
   background-color: transparent;
-  background-image: url(http://pinger.comcss/themes/base/images/ui-icons_222222_256x240.png);
+  background-image: url(http://pinger.com/content/css/themes/base/images/ui-icons_222222_256x240.png);
   background-origin: padding-box;
   background-position: -96px -128px;
   background-repeat: no-repeat;
@@ -880,25 +861,30 @@ transition: all .3s ease;
 }
 
 #androidBtn,
-#appstoreBtn {
+#appstoreBtn,
+#windowsBtn {
   display: inline-block;
   *position: absolute;
   width: 143px;
   height: 50px;
   margin: 0;
-  background: url(http://cf-www.pinger.comi/btn_gray_app_store_sm.png) no-repeat;
+  background: url(http://cf-www.pinger.com/content/i/btn_gray_app_store_sm.png) no-repeat;
   text-indent: -9999px;
   font-size: 0;
 }
 
+
 #androidBtn {
-  background: url(http://cf-www.pinger.comi/btn_gray_google_play_sm.png) no-repeat;
+  background: url(http://cf-www.pinger.com/content/i/btn_gray_google_play_sm.png) no-repeat;
 }
 
-
+#windowsBtn {
+  background: url(/content/i/btn_gray_windows_store_sm.png) no-repeat;
+}
 
 #androidBtn:hover,
-#appstoreBtn:hover {
+#appstoreBtn:hover,
+#windowsBtn:hover  {
   background-position: 0 -50px;
 }
 
@@ -944,7 +930,7 @@ transition: all .3s ease;
 
 /* close button positioned on upper right corner */
 .downloadlinksclose {
-    background: url(http://pinger.comcss/themes/base/images/ui-icons_222222_256x240.png)  no-repeat center center;
+    background: url(http://pinger.com/content/css/themes/base/images/ui-icons_222222_256x240.png)  no-repeat center center;
   position:absolute;
     right:5px;
     top:5px;
@@ -982,7 +968,7 @@ transition: all .3s ease;
 }
   
 
-#home #logo {
+#home #logo, #home #logoGB {
   display: block;
   max-width: 100%;
   margin: 0 auto;
@@ -998,7 +984,7 @@ transition: all .3s ease;
 
 .container {
   
-  margin:0 auto;
+  margin:auto;
   max-width: 60em;
   margin-left: auto;
   margin-right: auto;
@@ -1423,11 +1409,10 @@ div.clear {clear:both;padding-top:5px;}
         }
 
 
-
 /* sprites */
 
-.btn_download, #facebookBtn, #fsm, .btn_get_app, #moreapps div#jvm, .more, .more_shadow, .more_shadow_white, #pingerapp, #tf, #gifchat, #twitterBtn, #logo, #pinger_logo, #pinger_logo_plain {
-  background: url(/content/i/products/spirtes.png?sdab6ba93d0) no-repeat;
+.btn_download, #facebookBtn, #fsm, .btn_get_app, #moreapps div#jvm, .more, .more_shadow, .more_shadow_white, #pingerapp, #tf, #gifchat, #twitterBtn, #logo, #logoGB, #pinger_logo, #pinger_logo_plain {
+  background: url(/content/i/products/spirtes.png?sdab6ba93dj) no-repeat;
 }
 
 .btn_download {
@@ -1492,10 +1477,10 @@ div.clear {clear:both;padding-top:5px;}
   background-position: 0 -742px;
 }
 
-#logo {
+#logo, #logoGB {
   background-position: 0 0;
   width: 104px;
-  height: 103px;
+  height: 101px;
 }
 
 #pinger_logo {
@@ -1518,8 +1503,13 @@ div.clear {clear:both;padding-top:5px;}
 
 .more_shadow,
 .more_shadow_white {
-  width: 100%;
+  width: 1000px;
   height: 58px;
+}
+
+#moreapps div h2 {
+	font-family: helvetica, sans-serif, arial;
+	font-size:12px;
 }
 
 #moreapps div#jvm,
@@ -1527,9 +1517,32 @@ div.clear {clear:both;padding-top:5px;}
 #moreapps div#pingerapp,
 #moreapps div#tf,
 #moreapps div#gifchat {
-  height: 40px;
-  padding-top: 15px;
+  height: 55px;
+  padding-top: 0px;
   margin-top: 15px;
+}
+
+#moreapps div#gifchat h2 {
+	color:#ea2a95;
+}
+
+
+#moreapps div#jvm h2 {
+	color:#00aff0;
+}
+
+#moreapps div#fsm h2 {
+	color:#fb9a30;
+}
+
+
+#moreapps div#pingerapp h2 {
+	color:#fff;
+}
+
+
+#moreapps div#tf h2 {
+	color:#fff;
 }
 
 .undershadow {
