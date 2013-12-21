@@ -231,3 +231,23 @@ h1 {
 {
   height:130px;
 }
+
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+  #sec1 {
+    height: 630px;
+  }
+  /* make text slightly more readable on that colorful image*/
+  #sec1 #shell #blurb p {
+    text-shadow:0 0 2px black;
+  }
+  #sec2 {
+    background-position: center 300px;
+  }
+  #sec4 {
+    height: 800px;
+  }
+  #sec4 .btn_get_app {
+    top: 325px;
+  }
+}
