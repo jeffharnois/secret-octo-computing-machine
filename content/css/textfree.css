@@ -1,0 +1,233 @@
+
+#rootDiv {
+   background: url(../i/products/textfree/bg_1.jpg) no-repeat center center fixed; 
+  
+}
+
+#moreapps p {
+	font: Helvetica;
+	font-family:Helvetica, Arial, sans-serif;
+}
+
+#sec1 #shell #blurb {
+  padding-top:70px;
+  color:#fff;
+  font-size:18px;
+  margin-left:52px;
+  width:420px;
+}
+
+#blurb p {
+	margin-bottom:10px;
+}
+
+.quotes {
+	font-style:italic;
+	color:#fff;
+	font-size:1.1em;	
+	font-weight:bold;
+}
+
+.source {
+	font-size:.7em;	
+	color:#fff;
+}
+
+#sec1 #shell {
+ 
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/textfree/bg_1.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/textfree/bg_1.jpg', sizingMethod='scale')";
+  
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(../i/products/textfree/bg_1.jpg) no-repeat center center;
+
+
+}
+
+
+h1 {
+	font:Helvetica;
+	font-family:Helvetica, Arial, sans-serif;
+	color:#fff;
+	font-weight:200;
+	font-size:40px;
+	margin-bottom:20px;
+}
+
+.pingerwinkle {
+	color:#6063ce;
+	
+}
+
+
+#sec2 {
+ 
+	height:696px;
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/textfree/bg_2.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/textfree/bg_2.jpg', sizingMethod='scale')";
+  
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(../i/products/textfree/bg_2.jpg) no-repeat center bottom;
+
+  
+}
+
+#sec2 p {
+	width:483px;
+}
+
+
+#sec2 div {
+	padding-top:0px;
+	
+}
+
+#sec3 {
+ 
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/textfree/bg_3.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/textfree/bg_3.jpg', sizingMethod='scale')";
+  
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(../i/products/textfree/bg_3.jpg) no-repeat center center;
+
+  
+}
+
+
+#sec3 h1 {
+	font-size:35px;
+	padding-top:100px;
+	padding-left:80px;
+}
+
+#sec3 p {
+  padding-top:0px;
+  padding-left:80px;
+  color:#fff;
+  text-shadow: 2px 2px 2px #000000;
+  line-height:30px;
+  width:380px;
+}
+
+#sec3 h1 {
+	  text-shadow: 2px 2px 2px #000000;
+}
+
+
+
+#sec4 {
+	height:648px;
+	 padding-top:0px;
+ /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/textfree/bg_4.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/textfree/bg_4.jpg', sizingMethod='scale')";
+  
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(../i/products/textfree/bg_4.jpg) no-repeat center bottom;
+}
+
+
+#sec4 p {
+	width:580px;
+	line-height:23px;
+}
+
+
+
+#sec4 div {
+	padding-top:50px;
+	 line-height:30px;
+	
+}
+
+#footer {
+  top:2570px;
+  
+  
+}
+
+
+.btn_get_app {
+  background-position: 0 -793px;
+  width: 71px;
+  height: 90px;
+}
+
+
+.more {
+  background-position: 0 -941px;
+  width: 1000px;
+  height: 67px;
+}
+
+.more_shadow {
+  background-position: 0 -882px;
+}
+
+.more_shadow_white {
+  background-position: 0 -1008px;
+}
+
+
+.btn_download {
+  background-position: 0 -767px;
+  width: 131px;
+  height: 26px;
+  
+}
+
+#logo {
+  background-position: 0 -1071px;
+  width: 107px;
+  height: 135px;
+}
+
+
+
+
+#gifchat {
+ width:180px;
+  padding-left:63px;
+}
+
+
+#moreapps div#gifchat {
+  background-position: 0 -1206px;
+  width: 140px;
+}
+
+.downloadlinks
+{
+  height:130px;
+}
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+  #sec1 {
+    height: 650px;
+  }
+  #sec2 {
+    height: 900px;
+  }
+  /* specificity ftw */
+  #sec2 div .btn_get_app {
+    top: 360px;
+  }
+  #sec4 {
+    height: 800px;
+  }
+  #sec4 .btn_get_app {
+    top: 325px;
+  }
+}

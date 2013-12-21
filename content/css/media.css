@@ -1,0 +1,84 @@
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+@media only screen and (min-width:320px) and (max-width:600px) {
+  #logo {
+    transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    margin-left: -62px;
+    margin-top: -24px;
+  }
+  #topnav {
+    display: none;
+  }
+  #sec1 #shell #blurb {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 80%;
+  }
+  #sec1 #shell #blurb p {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #btn_download_textfree {
+    margin: 5px 0 0 10%;
+  }
+  #moreapps {
+    margin: 10px auto 0;
+    padding: 0 0 0 10%;
+    width: 80%;
+  }
+
+  #sec2 .centered,
+  #sec3 .centered,
+  #sec4 .centered {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  #sec2 .btn_get_app {
+    top: 300px;
+  }
+  
+  #sec3 h1.centered {
+    margin-top: 100px;
+  }
+
+  #sec3 p.centered {
+    width: 50%;
+  }
+
+  #footer .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #footer #pinger_logo_plain {
+    margin: 0;
+  }
+
+  #footer #site_links {
+    margin: 0;
+  }
+  #footer .col3 {
+    margin-left: 0;
+  }
+
+  #footer .col2,
+  #footer .col4,
+  #footer .col5 {
+    margin-left: 10px;
+  }
+} 
+
+@media only screen and (min-width:320px) and (max-width:600px) and (orientation: landscape) {
+  #footer .col3 {
+    margin-left: 10px;
+  }
+}
+
+
+/* big landscape tablets, laptops, and desktops */
+@media only screen and (min-width:600px) and (min-width:1025px) { 
+
+}

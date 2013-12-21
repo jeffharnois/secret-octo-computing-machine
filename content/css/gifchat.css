@@ -1,0 +1,59 @@
+
+#rootDiv {
+   background: url(../i/products/gifchat/bg_1.png) no-repeat center center fixed; 
+  
+}
+
+#sec1 #shell {
+ 
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/gifchat/bg_1.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/gifchat/bg_1.png', sizingMethod='scale')";
+  
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(../i/products/gifchat/bg_1.png) no-repeat center center;
+
+
+}
+
+
+
+#sec3 {
+ 
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/gifchat/bg_3.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../i/products/gifchat/bg_3.png', sizingMethod='scale')";
+  
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(../i/products/gifchat/bg_3.png) no-repeat center center;
+
+  
+}
+
+
+
+#sec5 { 
+ 
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/'../i/products/gifchat/bg_5.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/'../i/products/gifchat/bg_5.png', sizingMethod='scale')";
+  
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(../i/products/gifchat/bg_5.png) no-repeat center center;
+
+
+  
+}
+
+#sec1 p {
+  padding-top:210px;
+  margin-left:52px;
+  width:420px;
+}

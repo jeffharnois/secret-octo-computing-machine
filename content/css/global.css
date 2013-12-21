@@ -1,0 +1,967 @@
+@charset "UTF-8";
+/* PINGER STANDARD CSS 2011 DG Updated 2/26/2012 */
+
+/* null out margins and padding */
+html,body,address,blockquote,div,
+form,fieldset,caption,
+h1,h2,h3,h4,h5,h6,
+hr,ul,li,ol,ul,
+table,tr,td,th,p,img {
+margin:0;
+padding:0;
+}
+
+img,fieldset {
+border:none;
+}
+
+/* Structure */
+body {
+	color: #565656;
+	font-size: 62.5%;
+	font-family: helvetica, sans-serif, arial;
+	background-color:#E8E8E8;
+	height: 1%;
+}
+
+#canvas {
+	background-color: #FFF;
+	border-bottom: solid 2px #DEDEDE;
+}
+#wrapper {
+	margin: 0 auto -4px auto;
+	width: 940px;
+	min-height: 700px;
+}
+
+#pingerexwrapper {
+	margin: 0 auto -4px auto;
+	width: 1043px;
+	min-height: 700px;
+}
+
+
+a, a:visited, a:active, .note {
+	color: #6164CE;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	color: #6164CE;
+	text-decoration: underline;
+}
+
+#home {
+	position: relative;
+}
+
+#basic, #basic2 {
+	position: relative;
+	overflow: hidden;
+}
+
+object { outline: none;}
+
+
+/* Header */
+
+#home #header {
+	width: 100%;
+	min-height: 125px;
+	background: url(http://cf-www.pinger.comi/logo.png) no-repeat;
+	background-position: 0 10px;
+}
+
+#basic #headerGlobal {
+	width: 100%;
+	min-height: 120px;
+	background-position: 0 10px;
+	margin-bottom: 45px;
+}
+
+#headerGlobal h1.lingualSignature {
+	font-size: 2.4em;
+	font-weight: normal;
+	color: #000;
+	left: 110px;
+	position: absolute;
+	top: 44px;
+}
+
+/* FF Hack to Target FF only */
+@-moz-document url-prefix() {
+    #headerGlobal h1.lingualSignature {
+	font-size: 2.4em;
+	font-weight: normal;
+	color: #000;
+	left: 110px;
+	position: absolute;
+	top: 58px;
+	line-height: 0px;
+	}
+}
+
+.flashLogo {
+	margin-top: 11px;
+	*margin-top: 13px;
+	}
+
+	
+/* FF Hack to Target FF only */
+@-moz-document url-prefix() {
+    .flashLogo {
+	margin-top: 10px;
+	}
+}
+
+#logo {
+	display: inline;
+	float: left;
+	width: 103px;
+	height: 112px;
+	margin: 10px 0 0 0;
+	background: url(http://cf-www.pinger.comi/logo.png) no-repeat;
+	text-indent: -9999px;
+	font-size: 0;
+	
+}
+
+.login {
+	float: right;
+	margin-top: 33px;
+	font-size: 1.3em;
+	width: 104px;
+	text-align: center;
+}
+
+*:first-child+html .login {
+	float: right;
+	margin-top: -85px;
+	font-size: 1.3em;
+	width: 104px;
+	text-align: center;
+	}
+
+#loginBtn {
+	display: inline;
+	float: right;
+	width: 104px;
+	height: 43px;
+	margin-bottom: 2px;
+	background: url(http://cf-www.pinger.comi/btn_login.png) no-repeat;
+	text-indent: -9999px;
+	font-size: 0;
+}
+
+#loginBtn:hover {
+	background-position: 0 -43px;
+}
+
+/* Billboard */
+
+#home #billboard {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	padding: 0;
+}
+
+#billboard .bbContent,
+.bbContent_de {
+	position: relative;
+	background:url(http://cf-www.pinger.comi/billboard/bb_com_tree.png) no-repeat;
+	min-height:526px;
+	width: 535px;
+	margin: 48px auto 0 auto;
+	*margin: 52px auto 0 auto; /* IE7 Specific */
+	font-size: 2.0em;
+}
+
+#billboard .bbContent_de {
+	background:url(http://cf-www.pinger.comi/billboard/bb_com_tree_de.png) no-repeat;
+}
+
+.bbLinks {
+	position: absolute;
+	width: 100%;
+	bottom: 65px;
+	text-align: center;
+}
+
+/* MAKE DEVICES CLICKABLE WITH FLOATING DIVS */
+.bbContent_de a.text,
+.bbContent a.text {
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	width: 522px;
+	height: 50px;
+}
+
+.bbContent_de a.iphone,
+.bbContent a.iphone {
+	position: absolute;
+	top: 165px;
+	left: 35px;
+	width: 100px;
+	height: 200px;
+}
+
+.bbContent_de a.ipad,
+.bbContent a.ipad {
+	position: absolute;
+	top: 118px;
+	left: 169px;
+	width: 195px;
+	height: 250px;
+}
+
+.bbContent_de a.android,
+.bbContent a.android {
+	position: absolute;
+	top: 167px;
+	left: 398px;
+	width: 100px;
+	height: 200px;
+}
+
+.bbContent_de a.text h2,
+.bbContent a.text h2,
+.bbContent_de a.android h2,
+.bbContent a.android h2,
+.bbContent_de a.ipad h2,
+.bbContent a.ipad h2,
+.bbContent_de a.iphone h2,
+.bbContent a.iphone h2 {
+ display: none;	
+}
+
+
+
+/* Basic Template Content */
+
+#basic #content, #basic #press {
+	width: 720px;
+	margin-left: 110px;
+	position: relative;
+	margin-bottom: 80px;
+	overflow: hidden;
+}
+
+.floatLeft {
+	float: left;
+	display: inline;
+	margin-top: 0;
+}
+
+.floatRight {
+	float: right;
+	display: inline;
+	margin-top: 0;
+}
+
+#basic .leftColumn {
+	float: left;
+	width: 650px;
+	display: inline;
+	margin: 0 0 80px 110px;
+	overflow: hidden;
+	clear: left;
+}
+
+#basic .rightColumn {
+	position: relative;
+	float: right;
+	width: 130px;
+	display: inline;
+	margin-top: 30px;
+	margin-right: 30px;
+	margin-bottom:180px;
+}
+
+#basic p {
+		font-size: 1.2em;
+		margin-bottom: 20px;
+		line-height: 1.4em;
+}
+
+#basic p.subTitle {
+		font-size: 1.5em;
+		margin-bottom: 20px;
+		line-height: 1.4em;
+}
+
+#basic h2, .subNav h3, .subNav h4 {
+	font-size: 1.6em;
+	margin-bottom: 10px;
+	color: #464646;
+}
+
+#basic h2.title {
+	font-size: 2.1em;
+	margin-bottom: 10px;
+	color: #464646;
+}
+
+.subNav h3 {
+	font-size: 1.5em;	
+}
+
+.subNav h4 {
+	font-size: 1.2em;
+	margin: 15px 0 5px 0;
+	color: #464646;
+}
+#basic ol.standard,
+#basic ul.standard {
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin: 0 0 20px 17px;
+	list-style-image:url(http://cf-www.pinger.comi/ic_bullet.png);
+}
+
+#basic ol.standard {
+	list-style: decimal;
+	margin-left: 20px;
+}
+
+li {
+	margin: 0 0 8px 0;
+}
+
+.inlinePicRight {
+	float: right;
+	top: 0;
+	right: 0;
+	clear: both;
+}
+
+.rightColumn .subNav {
+	width: 100%;
+	padding: 15px;
+	background-color: #E8E8E8;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.subNav ul.subLinks {
+	margin: 7px 0 0 0;
+	list-style: none;
+	font-size: 1.2em;
+}
+
+/* App Lineup */
+
+.displayArea,.displayAreaLast  {
+	width: 100%;
+	min-height: 400px;
+	margin: 0 0 20px 0;
+	height: auto;
+	position: relative;	
+	padding: 20px 20px 20px 0;
+	border-bottom: dotted 1px #CCC;
+	overflow: hidden;
+}
+
+.displayAreaLast {
+	border: none;	
+}
+
+.appWrapper {
+	position: relative;
+	min-height: 75px;
+	padding-top: 15px;
+	overflow: hidden;
+}
+
+.subHead {
+	margin-left: 88px;
+	margin-top: -8px;
+	font-size: 1.3em;
+}
+
+
+.appScreen {
+	float: right;
+	margin-left: 15px;
+	margin-top: 0px;
+}
+
+#hmLearnMoreBtn {
+	display: inline-block;
+	*position: absolute;
+	width: 132px;
+	height: 55px;
+	margin: 400px 0 10px 204px;
+	background: url(http://cf-www.pinger.comi/btn_learn_more.png) no-repeat;
+	text-indent: -9999px;
+	font-size: 0;
+}
+
+#hmLearnMoreBtn:hover {
+	background-position: 0 -55px;
+}
+
+#deAndroidBtn,
+#deAppstoreBtn,
+#androidBtn,
+#appstoreBtn,
+#textfreeWebBtn {
+	display: inline-block;
+	*position: absolute;
+	width: 144px;
+	height: 49px;
+	margin: 0;
+	background: url(http://cf-www.pinger.comi/btn_appstore.png) no-repeat;
+	text-indent: -9999px;
+	font-size: 0;
+}
+
+#androidBtn {
+	background: url(http://cf-www.pinger.comi/btn_google_play.png) no-repeat;
+}
+
+#deAndroidBtn {
+	background: url(http://cf-www.pinger.comi/btn_android_market_de.png) no-repeat;
+}
+
+#deAppstoreBtn {
+	background: url(http://cf-www.pinger.comi/btn_appstore_de.png) no-repeat;
+}
+
+#textfreeWebBtn {
+	background: url(http://cf-www.pinger.comi/btn_textfree_web.png) no-repeat;
+}
+
+#deAndroidBtn:hover,
+#deAppstoreBtn:hover,
+#androidBtn:hover,
+#appstoreBtn:hover,
+#textfreeWebBtn:hover {
+	background-position: 0 -49px;
+}
+
+.underline {
+	text-decoration: underline;	
+}
+
+
+
+/* Social Media Buttons */
+
+div#social {
+	position: absolute;
+	top: -35px;
+	right: 0;
+}
+
+#facebookBtn,
+#twitterBtn {
+	display: inline;
+	float: right;
+	width: 25px;
+	height: 25px;
+	margin-bottom: 2px;
+	margin-left: 5px;
+	background: url(http://cf-www.pinger.comi/btn_twitter_sml.png) no-repeat;
+	text-indent: -9999px;
+	font-size: 0;
+}
+
+#facebookBtn {
+	background: url(http://cf-www.pinger.comi/btn_facebook_sml.png) no-repeat;	
+}
+
+#facebookBtn:hover,
+#twitterBtn:hover {
+	background-position: 0 -25px;
+}
+
+/* Watermark */
+
+div#watermark {
+	position: absolute;
+	top: -168px;
+	*top: -164px;
+	right: 0;
+}
+
+/* BEGIN Press Styling */
+#pressRelease2011,
+#pressRelease2010,
+#pressRelease2009,
+#press2011,
+#press2010,
+#press2009 {
+	display: none;
+	margin-top: 30px;
+}
+
+#press h2.title, #press h3.subhead {
+	text-align: center;
+}
+
+#press h3.subhead {
+	font-size: 1.4em;
+	margin-bottom: 20px;	
+}
+
+.source {
+	color: #AAA;
+	margin: 0 10px;
+}
+
+.quote {
+	position: relative;
+	font-size: 1.8em;	
+	background-color: #E8E8E8;
+	width: 340px;
+	padding: 20px;
+	line-height: 1.4em;
+	margin: 0 auto 0 auto;
+}
+
+.qSource {
+	position: relative;
+	float: right;
+	font-size: 0.7em;	
+}
+
+#basic ul.press {
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin: 0 0 20px 0;
+	list-style: none;
+}
+
+
+ul.pressRelease {
+ 	font-size: 1.1em;
+	line-height: 1.4em;
+	margin: 0 0 20px 0;
+	list-style: none;	
+}
+
+a.releaseTitle {
+	font-size: 1.2em;
+	
+}
+
+.toggleLink {
+	font-size: 1.2em;
+	float: right;
+	margin-top: -10px;
+	background-color: #FFF;
+	padding-left: 5px;	
+}
+
+.mediaContact {
+	font-size: 1.2em;	
+	line-height: 1.4em;
+}
+
+div.hr {
+	width:100%;
+	position: relative;
+	border-top: dotted 1px #CCC;
+	margin: 30px 0;	
+}
+
+/* BEGIN Jobs */
+
+#header .location {
+	float: right;
+	margin-top: 65px;
+	font-size: 1.3em;
+}
+
+.jobSubhead {
+	margin-top: -5px;	
+}
+
+/* Footer */
+
+div#footer {
+	margin: 0 auto 30px auto;
+	padding-top: 20px;
+	width: 940px;
+	position: relative;
+	height: auto;
+}
+
+#footer ul {
+	margin:0;
+	padding:0;
+}
+
+#footer li {
+	margin: 0;
+	padding: 2px 13px;
+	float: right;
+	list-style-type: none;
+	list-style-image: none;
+	background: none;
+	font-size: 1.2em;
+	height: auto;
+}
+
+#footer li.last {
+	padding-right: 0;
+}
+
+#footer .copyright {
+	color: #565656;
+	width: auto;
+	float: left;
+	font-size: 1.2em;
+}
+
+.divider {
+ margin: 0 5px;	
+ color: #AAA;
+}
+
+.round {
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.dateStamp {
+	font-size: 1.0em;
+}
+
+.clear {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.test {
+	border: solid 1px #990000;
+}
+
+
+.allcaps {
+	text-transform:uppercase;
+}
+
+.execTitle {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* products and home page specific */
+
+ @font-face {
+    font-family: 'AGBookRoundedBQRegular';
+    src: url('css/fonts/agbookroubqreg-webfont.eot');
+    src: url('css/fonts/agbookroubqreg-webfont.eot?#iefix') format('embedded-opentype'),
+	 	 url('css/fonts/agbookroubqreg-webfont.svg#AGBookRoundedBQRegular') format('svg'),
+         url('css/fonts/agbookroubqreg-webfont.woff') format('woff'),
+		 url('css/fonts/agbookroubqreg-webfont.otf') format('opentype'),
+         url('css/fonts/agbookroubqreg-webfont.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*
+@font-face {
+    font-family: 'AGBookRoundedBQMedium';
+    src: url('fonts/agbookroubqmed-webfont.eot');
+    src: url('fonts/agbookroubqmed-webfont.eot?#iefix') format('embedded-opentype'),
+	 	 url('fonts/agbookroubqmed-webfont.svg#AGBookRoundedBQMedium') format('svg'),
+         url('fonts/agbookroubqmed-webfont.woff') format('woff'),
+		 url('fonts/agbookroubqmed-webfont.otf') format('opentype'),
+         url('fonts/agbookroubqmed-webfont.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+
+#platforms_01, #platforms_02,#platforms_03, #platforms_04  {
+	display: inline;
+	float: right;
+	width: 46px;
+	height: 38px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background: url(http://cf-www.pinger.comi/platforms_01.png) no-repeat;
+	text-indent: -9999px;
+	font-size: 0;
+}
+#platforms_02 {
+	background: url(http://cf-www.pinger.comi/platforms_02.png) no-repeat;
+	width: 47px;
+}
+#platforms_03 {
+	background: url(http://cf-www.pinger.comi/platforms_03.png) no-repeat;
+	width: 53px;
+}
+#platforms_04 {
+	background: url(http://cf-www.pinger.comi/platforms_04.png) no-repeat;
+	width: 44px;
+}
+#platforms_01:hover, #platforms_02:hover,#platforms_03:hover, #platforms_04:hover {
+	background-position: 0 -38px;
+}
+
+/* products page specific */
+
+#basic #product_content {
+	width: 834px;
+	margin-left: 80px;
+	position: relative;
+	margin-bottom: 80px;
+	overflow: hidden;
+}
+
+#platform {
+	color:#999999;
+	font-size:12px;
+	position:relative;
+	top:20px;
+	
+}
+
+#platform_header {
+	background-image:url(http://cf-www.pinger.comi/grey_horiz_line.gif);
+	width:192px;
+	text-align:center;
+	text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+#platform_header div {
+	width:33%;
+	background-color:white;
+	left:33%;
+	position:relative;
+	
+	
+}
+
+#device_links {
+	position:relative;	
+	top:8px;
+}
+
+#nav {
+	position:absolute;
+	width:440px;
+	top:50px;
+	left:-27px;
+	z-index:1000;
+}
+
+
+
+#pingerexnav {
+	position:absolute;
+	width:456px;
+	top:50px;
+	left:-27px;
+	z-index:1000;
+}
+
+#next_btn, #back_btn {
+	display: inline;
+	float: right;
+	width: 44px;
+	height: 44px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top:200px;
+	background: url(http://cf-www.pinger.comi/arrow_right.png) no-repeat;
+	text-indent: -9999px;
+	font-size: 0;
+}
+#back_btn {
+	background: url(http://cf-www.pinger.comi/arrow_left.png) no-repeat;
+	width: 44px;
+	margin-left: 0px;
+	float:left;
+}
+#next_btn:hover, #back_btn:hover {
+	background-position: 0 -44px;
+}
+
+
+
+
+#screenshot_container {
+	position:relative;	
+	top:0px;
+	width:470px;
+	left:30px;
+	float:left;
+	max-width:470px;
+	padding-bottom:2px;
+}
+
+.pingerexblurb {
+	position:relative;
+	z-index:1000;
+	width:225px;
+	margin-left:11px;
+	margin-top:80px;
+	float:left;
+	
+}
+
+
+#pingerexBillboard {
+	float:left;	
+}
+
+#pingerex_screenshot_container {
+	position:relative;	
+	top:0px;
+	width:258px;
+	margin-left:64px;
+	max-width:258px;
+	padding-bottom:2px;
+	float:left;
+}
+
+.pics {
+	
+	
+	width:375px;
+	position:relative;
+	display:inline-block;
+	font-size:0;
+	line-height:0;
+	top:1px;
+	left:1px;
+	bottom:1px;
+	right:1px;
+	height: 563px;
+	
+}
+
+
+
+.blurb {
+	position:relative;
+	z-index:1000;
+	width:340px;
+	float:right;
+	
+}
+
+#product_content h1 {
+	font-size:22px;
+	font-weight:normal;
+	color:#000000;
+	font-family: Helvetica, Arial, sans-serif;
+	height:40px;
+	
+}
+
+#basic .blurb ol.standard,
+#basic .blurb ul.standard {
+	font-size: 1.5em;
+	
+	
+}
+
+
+#basic .blurb p {
+	font-size: 1.5em;
+	margin-bottom: 20px;
+	line-height: 1.4em;
+}
+
+.coming_soon {
+	
+	font-size:22px;
+	font-weight:normal;
+	color:#666666;
+	font-family: Helvetica, Arial, sans-serif;
+	height:40px;
+}
+
+
+#app_links {
+	height:110px;	
+}
+
+
+
+
+
+.appstore_links {
+	float:left;
+	margin-right:12px;
+	display: inline;
+	width: 71px;
+	height: 71px;
+	text-indent: -9999px;
+	font-size: 0;
+	
+}
+
+#appstore_links_ppl01:hover, #appstore_links_ppl02:hover, #appstore_links_ppl03:hover, #appstore_links_ppl04:hover, #appstore_links_tf:hover, #appstore_links_tfvm:hover, #appstore_links_tfipad:hover, #appstore_links_tfa:hover, #appstore_links_psmsf:hover, #appstore_links_pde:hover {
+	background-position: 0 -71px;
+}
+
+
+#appstore_links_ppl01, #appstore_links_ppl02, #appstore_links_ppl03, #appstore_links_ppl04 {
+	background: url(http://cf-www.pinger.comi/btn_logo_ppl.png) no-repeat;
+	
+}
+
+#appstore_links_tf{
+	background: url(http://cf-www.pinger.comi/btn_logo_tfa.png) no-repeat;
+	
+}
+
+#appstore_links_tfvm{
+	background: url(http://cf-www.pinger.comi/btn_logo_tfa.png) no-repeat;
+	
+}
+
+#appstore_links_tfipad{
+	background: url(http://cf-www.pinger.comi/btn_logo_tfipad.png) no-repeat;
+	
+}
+
+#appstore_links_tfa {
+	background: url(http://cf-www.pinger.comi/btn_logo_tfa.png) no-repeat;
+	
+}
+
+#appstore_links_psmsf {
+	background: url(http://cf-www.pinger.comi/btn_logo_psmsf.png) no-repeat;
+	
+}
+
+#appstore_links_pde {
+	background: url(http://cf-www.pinger.comi/btn_logo_pde.png) no-repeat;
+
+}
+
+
+ 
+.icon_rollover  { 
+   float:right;
+	width:84px;
+	height:70px;
+	margin-left:10px;
+	
+	cursor:pointer;
+	
+} 
+
+
+
+
+
+
+
